@@ -1,3 +1,6 @@
+//Componente principal, el nombre lo puse por error, es multiprogramación
+//Aquí se manejan todos los procesos elegidos por el usuario
+
 import React, { useEffect, useState } from "react";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
@@ -11,6 +14,7 @@ const Lotes = () => {
   const [start, setStart] = useState(false);
   const [text, setText] = useState("");
 
+  //Se agrega un proceso cada que se presiona el botón
   const handleSubmit = (event) => {
     event.preventDefault();
     setText("");
@@ -24,6 +28,7 @@ const Lotes = () => {
     }
   };
 
+  //Manejador para iniciar todos los procesos 
   useEffect(() => {
     processList.map((element) => {
       return <Process name={element.name} duration={element.duration} />;
@@ -35,6 +40,7 @@ const Lotes = () => {
     setStart(true);
   }
 
+  //Renderizado gráfico de toda la página
   return (
     <>
       <div className="lotes__content">

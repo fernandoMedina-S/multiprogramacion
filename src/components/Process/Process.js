@@ -1,3 +1,4 @@
+//Este es el componente encargado de renderizar los procesos individuales, maneja su tiempo de vida y su nombre
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import LinearProgress from "@mui/material/LinearProgress";
@@ -6,6 +7,7 @@ const Process = (props) => {
   const [progress, setProgress] = useState(0);
   const [start, setStart] = useState(props.started);
 
+  //Temporizador
   React.useEffect(() => {
     setStart(props.started);
     if (start) {
@@ -28,6 +30,7 @@ const Process = (props) => {
     
   }, [start, props.started]);
 
+  //Parte visual del renderizado
   return (
     <>
       {console.log(props.duration)}
