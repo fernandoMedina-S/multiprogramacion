@@ -1,0 +1,28 @@
+.lotes__content{
+    min-height: 95vh;
+    background-color: #f2e8cf;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.lotes__box-add{
+    grid-column: 1;
+    max-width: 60vh;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.lotes__text-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.lotes__box-display{
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    border: #c8daad solid;
+    min-width: 40vh;
+    min-height: 70vh;
+}

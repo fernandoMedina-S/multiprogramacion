@@ -1,0 +1,21 @@
+.navbar__list{
+    margin: 0;
+    display: flex;
+    list-style: none;
+    min-height: 5vh;
+    background-color: #606c38;
+    
+}
+
+.navbar__title{
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    text-decoration: none;
+    margin: 1rem;
+    color: #fefae0;
+}
+
+.navbar__activity{
+    margin: 1rem;
+    text-decoration: none;
+    color: #fefae0;
+}
